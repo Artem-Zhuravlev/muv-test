@@ -50,18 +50,19 @@ $media-expressions: (
 
   // Colors
   --color-white: #fff;
-  --color-black: #000;
-  --color-grey: #999;
-  --color-blue: #39f;
+  --color-black: #1F1C4E;
+  --color-grey: #F5F5F5;
+  --color-blue: #5DBDFB;
+  --color-blue-hover: #52afeb;
+  --color-yellow: #FEDA00;
 
   // Fonts
-  --font-sans-serif: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  --font-serif: 'Times New Roman', Times, Baskerville, Georgia, serif;
+  --font-sans-serif: 'Roboto', sans-serif;
 
   // Body base
-  --base-background-color: var(--color-black);
+  --base-background-color: var(--color-grey);
   --base-font-family: var(--font-sans-serif);
-  --base-font-size: 1.6rem;
+  --base-font-size: 1.4rem;
   --base-line-height: 1.2;
   --base-text-color: var(--color-black);
   --base-min-width: 320px;
@@ -88,8 +89,8 @@ $media-expressions: (
   --headings-color: var(--base-text-color);
 
   // Base font styles for headings
-  --headings-sizes-h1: 3rem;
-  --headings-sizes-h2: 2.7rem;
+  --headings-sizes-h1: 3.8rem;
+  --headings-sizes-h2: 3.6rem;
   --headings-sizes-h3: 2.4rem;
   --headings-sizes-h4: 2.1rem;
   --headings-sizes-h5: 1.7rem;
