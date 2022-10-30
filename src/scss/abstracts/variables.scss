@@ -52,9 +52,13 @@ $media-expressions: (
   --color-white: #fff;
   --color-black: #1F1C4E;
   --color-grey: #F5F5F5;
+  --color-grey-text: #707683;
   --color-blue: #5DBDFB;
   --color-blue-hover: #52afeb;
   --color-yellow: #FEDA00;
+  --dropdown-shadow: 0 0.4rem 1.5rem rgba(0, 0, 0, 0.1);
+  --lanuage-switcher-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.15);
+  --language-switcher-border-color: rgba(229, 229, 229, 0.6);
 
   // Fonts
   --font-sans-serif: 'Roboto', sans-serif;
@@ -96,3 +100,13 @@ $media-expressions: (
   --headings-sizes-h5: 1.7rem;
   --headings-sizes-h6: 1.5rem;
 }
+
+
+//Icomoon setup
+$icomoon-font-family: "icomoon" !default;
+$icomoon-font-path: "../fonts" !default;
+
+$icon-facebook: "\ea90";
+$icon-instagram: "\ea92";
+$icon-telegram: "\ea95";
+$icon-youtube: "\ea9d";

@@ -1,5 +1,5 @@
 .btn {
-  @include animate(background-color, .2s, ease);
+  @include animate(background-color);
   display: inline-block;
   padding: 1.5rem 2.5rem;
   text-decoration: none;
