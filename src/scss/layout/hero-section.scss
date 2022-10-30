@@ -1,0 +1,60 @@
+.hero {
+  padding: 3.7rem 0 3.9rem;
+  background-color: var(--color-yellow);
+
+  &-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 54rem;
+    grid-gap: 3.9rem;
+    align-items: center;
+    @include media('<widescreen') {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2.5rem;
+    }
+
+    @include media('<desktop') {
+      grid-template-columns: 1fr 30rem;
+    }
+
+    @include media('<tablet') {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &-content {
+    @include media('<tablet') {
+      order: 1;
+    }
+  }
+
+  &-label {
+    display: inline-block;
+    margin-bottom: 0.6rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.14rem;
+    color: var(--color-white);
+  }
+
+  &-title {
+    margin-bottom: 3.3rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+    line-height: 1.55;
+  }
+
+  &-btn {
+    margin-top: 2.2rem;
+  }
+
+  &-image {
+    display: flex;
+    align-items: flex-start;
+    max-width: 54rem;
+    @include media('<tablet') {
+      max-width: 30rem;
+    }
+  }
+}

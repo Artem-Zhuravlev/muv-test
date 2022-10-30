@@ -1,0 +1,20 @@
+.btn {
+  @include animate(background-color);
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border: none;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  border-radius: 0.4rem;
+  line-height: 1.2;
+  &:hover,
+  &:focus {
+    background-color: var(--color-blue-hover);
+  }
+
+  &:focus {
+    outline: 0.2rem solid var(--color-blue-hover);
+  }
+}

@@ -1,0 +1,26 @@
+.socials {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  &-link {
+    @include animate(color);
+    display: flex;
+    align-items: center;
+    padding: 1.3rem 1rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color:var(--color-grey-text);
+
+    &:hover,
+    &:focus {
+      color: var(--color-black);
+    }
+
+    &:focus {
+      outline: 0.1rem solid var(--color-blue);
+    }
+  }
+}
