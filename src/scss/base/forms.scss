@@ -50,3 +50,7 @@ input[type='submit'] {
   cursor: pointer;
   font-family: var(--form-font-family);
 }
+
+a:focus, button:focus, summary:focus {
+  outline: transparent;
+}
