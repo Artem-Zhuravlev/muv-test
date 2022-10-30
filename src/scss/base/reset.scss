@@ -31,3 +31,10 @@ img {
 .gm-style img {
   max-width: none;
 }
+
+.wrapper {
+  padding-top: 6.2rem;
+  @include media('<tablet') {
+    padding-top: 5.3rem;
+  }
+}

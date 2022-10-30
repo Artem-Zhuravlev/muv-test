@@ -1,0 +1,77 @@
+.accordion {
+  &-item {
+    @include animate(box-shadow, 0.2s, ease);
+    position: relative;
+    margin-bottom: 1.6rem;
+    padding: 1.8rem 6.4rem 1.8rem 2rem;
+    border-radius: 1.5rem;
+    background-color: var(--color-white);
+    cursor: pointer;
+    box-shadow: none;
+    &:focus{
+      outline: transparent;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: var(--accordion-shadow);
+    }
+
+    &.active {
+      box-shadow: var(--accordion-shadow);
+      .accordion-body {
+        max-height: 50rem;
+      }
+    }
+  }
+
+  &-header {
+    position: relative;
+    padding-right: 12rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.25;
+    @include media('<tablet') {
+      padding-right: 0;
+    }
+
+    &::after {
+      @include size(2.1rem);
+      content: "+";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      border: 0.1rem solid var(--color-blue);
+      border-radius: 50%;
+      right: -4.3rem;
+      font-size: 2rem;
+      font-weight: 400;
+      color: var(--color-blue);
+    }
+
+    .accordion-item.active & {
+      &:after {
+        content: "-";
+      }
+    }
+  }
+
+  &-body {
+    @include animate(max-height, 1s, ease);
+    max-height: 0;
+    box-shadow: none;
+    overflow: hidden;
+  }
+
+  &-body-inner {
+    margin-top: 2.5rem;
+  }
+
+  &-body *:last-child {
+    margin-bottom: 0;
+  }
+}
